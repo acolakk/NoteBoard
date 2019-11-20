@@ -27,6 +27,7 @@ namespace NoteBoard.DAL.Repositories
             _db.Entry(note).State = EntityState.Deleted;
             return _db.SaveChanges();
         }
+
         public int Update(Note note)
         {
             _db.Entry(note).State = EntityState.Modified;
